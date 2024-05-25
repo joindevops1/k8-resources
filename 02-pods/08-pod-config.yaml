@@ -12,12 +12,12 @@ spec:
     - containerPort: 80
     env:
     - name: course
-      valuefrom:
-        configMapkeyRef:
+      valueFrom:
+        configMapKeyRef:
           name: devops-config
           key: course
     - name: trainer
-      valuefrom:
-        configMapkeyRef:
+      valueFrom:
+        configMapKeyRef:
           name: devops-config
-          key: trainer      
+          key: trainer
