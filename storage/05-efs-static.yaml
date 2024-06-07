@@ -52,7 +52,7 @@ kind: Service
 metadata:
   name: efs-static
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     demo: efs-static
   ports:
